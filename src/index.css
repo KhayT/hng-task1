@@ -13,3 +13,65 @@ body {
   background: #ffffff;
   text-align: center;
 }
+
+.shareBtn-container {
+  width: fit-content;
+  position: absolute;
+  top: 40px;
+  right: 18%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tooltip {
+  width: fit-content;
+  position: relative;
+  display: none;
+}
+
+.content {
+  background: #101828;
+  border-radius: 8px;
+  padding: 8px 12px;
+  width: fit-content;
+}
+
+.content p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.bottom-center {
+  height: 12px;
+  width: 12px;
+  background: #101828;
+  border-radius: 1px;
+  transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+  position: absolute;
+  right: -5%;
+  top: 30%;
+}
+
+#share-btn,
+#dots {
+  border: 1px dashed #d0d5dd;
+  border-radius: 20px;
+  cursor: pointer;
+  background: #ffffff;
+  padding: 12.5px;
+}
+
+#dots {
+  display: none;
+}
+
+#share-btn:hover {
+  background: #f9fafb;
+}
+
+.shareBtn-container:hover .tooltip {
+  display: block;
+}
