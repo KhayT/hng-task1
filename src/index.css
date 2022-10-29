@@ -190,3 +190,35 @@ body {
   flex: 1;
   color: #667085;
 }
+
+@media (max-width: 575px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 375px) {
+  .shareBtn-container {
+    right: 16px;
+  }
+
+  .shareBtn-container:hover .tooltip {
+    display: none;
+  }
+
+  #share-btn {
+    display: none;
+  }
+
+  #dots {
+    display: block;
+  }
+
+  .link-container {
+    width: 90%;
+  }
+
+  #footer {
+    display: none;
+  }
+}
