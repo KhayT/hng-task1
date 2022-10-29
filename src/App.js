@@ -51,7 +51,7 @@ function App() {
         <Links url="http://books.zuri.team" title="Zuri Books" id="books" />
 
         <Links
-          url="http://books.zuri.team"
+          url="https://books.zuri.team/python-for-beginners?ref_id=<khayt>"
           title="Python Books"
           id="book__python"
         />
