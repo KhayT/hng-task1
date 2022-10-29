@@ -33,7 +33,7 @@ function App() {
       </div>
 
       <p id="twitter">Abdulazeez_KT</p>
-      <p id="slack">Khadijah</p>
+      <p id="slack">KhayT</p>
 
       <div className="link-container">
         <Links
