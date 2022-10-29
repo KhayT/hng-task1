@@ -1,4 +1,4 @@
-import Links from "./components/Links";
+import Links from "./components/Link";
 
 import shareIcon from "./images/share icon.svg";
 import dots from "./images/dots-horizontal.svg";
