@@ -74,7 +74,7 @@ function App() {
           <img src={slackIcon} alt="" />
         </a>
 
-        <a href="https://github.com/khayt" target="blank">
+        <a href="https://github.com/KhayT/hng-task1" target="blank">
           <img src={githubIcon} alt="" />
         </a>
       </div>
