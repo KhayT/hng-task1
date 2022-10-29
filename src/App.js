@@ -26,6 +26,9 @@ function App() {
           <img src={cameraIcon} alt="" id="cameraIcon" />
         </div>
       </div>
+
+      <p id="twitter">Abdulazeez_KT</p>
+      <p id="slack">Khadijah</p>
     </>
   );
 }
