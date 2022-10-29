@@ -140,6 +140,7 @@ body {
   border: 1px solid #eaecf0;
   border-radius: 8px;
   padding: 24px 32px;
+  position: relative;
 }
 
 .link:hover {
@@ -152,6 +153,26 @@ body {
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
+}
+
+.link-tooltip {
+  background-color: grey;
+  color: white;
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+
+  transform: translate(-50%);
+  z-index: 1;
+  display: none;
+  font-size: 14px;
+  padding: 5px 1rem;
+  border-radius: 10px;
+  /* max-width: 350px; */
+}
+
+.link:hover .link-tooltip {
+  display: block;
 }
 
 #twiter-link {

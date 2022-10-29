@@ -39,32 +39,42 @@ function App() {
         <Link
           url="https://twitter.com/Abdulazeez_KT"
           title="Twitter Link"
+          subtext="Here is a link to my twitter profile"
           id="twiter-link"
         />
 
         <Link
           url="https://training.zuri.team/"
           title="Zuri Team"
+          subtext="Meet the Zuri team"
           id="btn__zuri"
         />
 
-        <Link url="http://books.zuri.team" title="Zuri Books" id="books" />
+        <Link
+          url="http://books.zuri.team"
+          title="Zuri Books"
+          subtext="Check out tech related books here to aid your tech journey"
+          id="books"
+        />
 
         <Link
           url="https://books.zuri.team/python-for-beginners?ref_id=<khadijah>"
           title="Python Books"
+          subtext="Check out our beginner-friendly books on python"
           id="book__python"
         />
 
         <Link
-          url="https://background.zuri.team"
+          url="https://backgroundcheck.zuri.team/"
           title="Background Check for Coders"
+          subtext="We are also available to carry out background checks on coders"
           id="pitch"
         />
 
         <Link
           url="https://books.zuri.team/design-rules"
           title="Design Books"
+          subtext="Check out our available design books"
           id="book__design"
         />
       </div>
