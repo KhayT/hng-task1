@@ -157,3 +157,16 @@ body {
 #twiter-link {
   font-weight: 500;
 }
+
+.icons-container {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin: 24px 0 64px;
+  justify-content: center;
+}
+
+.icons-container img {
+  margin: 24px 0;
+  height: 24px;
+}

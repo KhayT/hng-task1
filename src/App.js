@@ -4,6 +4,8 @@ import shareIcon from "./images/share icon.svg";
 import dots from "./images/dots-horizontal.svg";
 import img from "./images/khadijah.jpg";
 import cameraIcon from "./images/camera icon.svg";
+import slackIcon from "./images/slack.jpg";
+import githubIcon from "./images/github.jpg";
 
 function App() {
   return (
@@ -64,6 +66,16 @@ function App() {
           title="Design Books"
           id="book__design"
         />
+      </div>
+
+      <div className="icons-container">
+        <a href="https://slack.com" target="blank">
+          <img src={slackIcon} alt="" />
+        </a>
+
+        <a href="https://github.com/khayt" target="blank">
+          <img src={githubIcon} alt="" />
+        </a>
       </div>
     </>
   );
