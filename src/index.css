@@ -170,3 +170,23 @@ body {
   margin: 24px 0;
   height: 24px;
 }
+
+#footer {
+  width: 90%;
+  padding: 48px 0px;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #eaecf0;
+  padding: 32px 0px 0px;
+  gap: 2rem;
+}
+
+.container p {
+  flex: 1;
+  color: #667085;
+}

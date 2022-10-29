@@ -1,4 +1,5 @@
 import Links from "./components/Link";
+import Footer from "./components/Footer";
 
 import shareIcon from "./images/share icon.svg";
 import dots from "./images/dots-horizontal.svg";
@@ -77,6 +78,8 @@ function App() {
           <img src={githubIcon} alt="" />
         </a>
       </div>
+
+      <Footer />
     </>
   );
 }
