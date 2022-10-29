@@ -29,6 +29,8 @@ function App() {
 
       <p id="twitter">Abdulazeez_KT</p>
       <p id="slack">Khadijah</p>
+
+      <div className="link-container"></div>
     </>
   );
 }
