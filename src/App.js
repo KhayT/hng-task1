@@ -33,7 +33,7 @@ function App() {
       </div>
 
       <p id="twitter">Abdulazeez_KT</p>
-      <p id="slack">KhayT</p>
+      <p id="slack">khadijah</p>
 
       <div className="link-container">
         <Links
@@ -51,7 +51,7 @@ function App() {
         <Links url="http://books.zuri.team" title="Zuri Books" id="books" />
 
         <Links
-          url="https://books.zuri.team/python-for-beginners?ref_id=<khayt>"
+          url="https://books.zuri.team/python-for-beginners?ref_id=<khadijah>"
           title="Python Books"
           id="book__python"
         />
