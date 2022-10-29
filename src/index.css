@@ -124,3 +124,36 @@ body {
 #slack {
   display: none;
 }
+
+.link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 56px;
+}
+
+.link {
+  background: #eaecf0;
+  border: 1px solid #eaecf0;
+  border-radius: 8px;
+  padding: 24px 32px;
+}
+
+.link:hover {
+  background: #d0d5dd;
+}
+
+.link-title {
+  text-decoration: none;
+  color: #101828;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+#twiter-link {
+  font-weight: 500;
+}
