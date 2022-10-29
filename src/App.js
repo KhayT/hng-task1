@@ -1,4 +1,4 @@
-import Links from "./components/Link";
+import Link from "./components/Link";
 import Footer from "./components/Footer";
 
 import shareIcon from "./images/share icon.svg";
@@ -36,33 +36,33 @@ function App() {
       <p id="slack">khadijah</p>
 
       <div className="link-container">
-        <Links
+        <Link
           url="https://twitter.com/Abdulazeez_KT"
           title="Twitter Link"
           id="twiter-link"
         />
 
-        <Links
+        <Link
           url="https://training.zuri.team/"
           title="Zuri Team"
           id="btn__zuri"
         />
 
-        <Links url="http://books.zuri.team" title="Zuri Books" id="books" />
+        <Link url="http://books.zuri.team" title="Zuri Books" id="books" />
 
-        <Links
+        <Link
           url="https://books.zuri.team/python-for-beginners?ref_id=<khadijah>"
           title="Python Books"
           id="book__python"
         />
 
-        <Links
+        <Link
           url="https://background.zuri.team"
           title="Background Check for Coders"
           id="pitch"
         />
 
-        <Links
+        <Link
           url="https://books.zuri.team/design-rules"
           title="Design Books"
           id="book__design"

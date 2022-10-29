@@ -2,11 +2,14 @@ import React from "react";
 
 const Links = (props) => {
   return (
-    <div className="link">
-      <a href={props.url} target="blank" id={props.id} className="link-title">
-        {props.title}
-      </a>
-    </div>
+    <a
+      href={props.url}
+      target="blank"
+      id={props.id}
+      className="link-title link"
+    >
+      {props.title}
+    </a>
   );
 };
 
