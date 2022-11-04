@@ -1,4 +1,4 @@
-import Link from "./components/Link";
+import Links from "./components/Link";
 import Footer from "./components/Footer";
 
 import shareIcon from "./images/share icon.svg";
@@ -7,6 +7,9 @@ import img from "./images/khadijah.jpg";
 import cameraIcon from "./images/camera icon.svg";
 import slackIcon from "./images/slack.jpg";
 import githubIcon from "./images/github.jpg";
+
+import { Route } from "react-router-dom";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
@@ -36,47 +39,51 @@ function App() {
       <p id="slack">Khadijah</p>
 
       <div className="link-container">
-        <Link
+        <Links
           url="https://twitter.com/Abdulazeez_KT"
           title="Twitter Link"
           subtext="Here is a link to my twitter profile"
           id="twiter-link"
         />
 
-        <Link
+        <Links
           url="https://training.zuri.team/"
           title="Zuri Team"
           subtext="Meet the Zuri team"
           id="btn__zuri"
         />
 
-        <Link
+        <Links
           url="http://books.zuri.team"
           title="Zuri Books"
           subtext="Check out tech related books here to aid your tech journey"
           id="books"
         />
 
-        <Link
+        <Links
           url="https://books.zuri.team/python-for-beginners?ref_id=<khadijah>"
           title="Python Books"
           subtext="Check out our beginner-friendly books on python"
           id="book__python"
         />
 
-        <Link
+        <Links
           url="https://backgroundcheck.zuri.team/"
           title="Background Check for Coders"
           subtext="We are also available to carry out background checks on coders"
           id="pitch"
         />
 
-        <Link
+        <Links
           url="https://books.zuri.team/design-rules"
           title="Design Books"
           subtext="Check out our available design books"
           id="book__design"
         />
+
+        <Route path="/contact">
+          <ContactPage />
+        </Route>
       </div>
 
       <div className="icons-container">
