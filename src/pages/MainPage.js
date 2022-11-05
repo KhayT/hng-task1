@@ -80,7 +80,9 @@ const MainPage = () => {
           id="book__design"
         />
 
-        <Link to="/contact">Contact</Link>
+        <Link to="/contact" className="link-title link">
+          Contact
+        </Link>
       </div>
 
       <div className="icons-container">
