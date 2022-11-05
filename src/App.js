@@ -8,8 +8,9 @@ import cameraIcon from "./images/camera icon.svg";
 import slackIcon from "./images/slack.jpg";
 import githubIcon from "./images/github.jpg";
 
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import ContactPage from "./pages/ContactPage";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -81,9 +82,17 @@ function App() {
           id="book__design"
         />
 
-        <Route path="/contact">
-          <ContactPage />
-        </Route>
+        <Link to="/contact">Contact</Link>
+
+        <Switch>
+          <Route path="/" exact>
+            <App />
+          </Route>
+
+          <Route path="/contact">
+            <ContactPage />
+          </Route>
+        </Switch>
       </div>
 
       <div className="icons-container">
