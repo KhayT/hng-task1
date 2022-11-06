@@ -46,12 +46,23 @@
   gap: 12px;
   margin-top: 24px;
   margin-bottom: 32px;
+  cursor: pointer;
 
   /* border: 1px solid red; */
 }
 
+.checkbox-container input {
+  cursor: pointer;
+}
+
 .checkbox-container label {
   color: #475467;
+  cursor: pointer;
+}
+
+.checkbox-container label a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .name-container {
@@ -70,6 +81,7 @@
 
 .div {
   margin-bottom: 24px;
+  cursor: pointer;
 }
 
 .label {
@@ -77,6 +89,7 @@
   font-size: 14px;
   line-height: 20px;
   color: #344054;
+  cursor: pointer;
 }
 
 .input {
@@ -97,9 +110,21 @@
   margin-top: 6px;
   width: 100%;
   font-family: inherit;
+  cursor: pointer;
 }
 
 .div textarea {
   resize: none;
   height: 8.25rem;
+  cursor: pointer;
+}
+
+.input:active,
+.input:focus {
+  color: black;
+}
+
+.error {
+  color: red;
+  font-size: 16px;
 }
