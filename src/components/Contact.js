@@ -19,7 +19,10 @@ const Contact = () => {
     setError(validateValues(formValues));
     setIsSubmit(true);
 
-    console.log(formValues);
+    formValues.firstname = "";
+    formValues.lastname = "";
+    formValues.email = "";
+    formValues.message = "";
   };
 
   useEffect(() => {

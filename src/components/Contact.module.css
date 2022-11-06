@@ -2,7 +2,6 @@
   text-align: left;
   width: 70%;
   margin: 0 auto;
-  /* border: 1px solid red; */
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
@@ -47,8 +46,6 @@
   margin-top: 24px;
   margin-bottom: 32px;
   cursor: pointer;
-
-  /* border: 1px solid red; */
 }
 
 .checkbox-container input {
@@ -71,12 +68,10 @@
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  /* border: 1px solid red; */
 }
 
 .nameField {
   width: 50%;
-  /* border: 1px solid red; */
 }
 
 .div {
@@ -124,7 +119,33 @@
   color: black;
 }
 
+textarea:active,
+textarea:focus {
+  color: black;
+}
+
 .error {
   color: red;
   font-size: 16px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 443px) {
+  .container {
+    width: 90%;
+  }
+
+  .name-container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nameField {
+    width: 100%;
+  }
 }
