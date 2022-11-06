@@ -80,7 +80,7 @@ const MainPage = () => {
           id="book__design"
         />
 
-        <Link to="/contact" className="link-title link">
+        <Link to="/contact" className="link-title link" id="contact">
           Contact
         </Link>
       </div>

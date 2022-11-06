@@ -51,88 +51,90 @@ const Contact = () => {
 
   return (
     <>
-      <div className={classes.container}>
+      <form onSubmit={submitFormHandler} className={classes.container}>
         <h1 className={classes.title}>Contact Me</h1>
         <p className={classes.subtext}>
           Hi there, contact me to ask me about anything you have in mind.
         </p>
 
-        <form onSubmit={submitFormHandler}>
-          <div className={classes["name-container"]}>
-            <div className={`${classes.nameField} ${classes.div}`}>
-              <label htmlFor="firstname" className={classes.label}>
-                First Name
-              </label>
-              <input
-                className={classes.input}
-                type="text"
-                placeholder="Enter your first name"
-                id="firstname"
-                defaultValue={formValues.firstname}
-                onChange={inputChangeHandler}
-              />
-              <p className={classes.error}>{error.firstname}</p>
-            </div>
-
-            <div className={`${classes.nameField} ${classes.div}`}>
-              <label htmlFor="lastname" className={classes.label}>
-                Last Name
-              </label>
-              <input
-                className={classes.input}
-                type="text"
-                placeholder="Enter your last name"
-                id="lastname"
-                defaultValue={formValues.lastname}
-                onChange={inputChangeHandler}
-              />
-              <p className={classes.error}>{error.lastname}</p>
-            </div>
-          </div>
-
-          <div className={classes.div}>
-            <label htmlFor="email" className={classes.label}>
-              Email
+        <div className={classes["name-container"]}>
+          <div className={`${classes.nameField} ${classes.div}`}>
+            <label htmlFor="firstname" className={classes.label}>
+              First Name
             </label>
             <input
               className={classes.input}
               type="text"
-              placeholder="Enter your email"
-              id="email"
-              defaultValue={formValues.email}
+              placeholder="Enter your first name"
+              name="firstname"
+              id="first_name"
+              defaultValue={formValues.firstname}
               onChange={inputChangeHandler}
             />
-            <p className={classes.error}>{error.email}</p>
+            <p className={classes.error}>{error.firstname}</p>
           </div>
 
-          <div className={classes.div}>
-            <label htmlFor="message" className={classes.label}>
-              Message
+          <div className={`${classes.nameField} ${classes.div}`}>
+            <label htmlFor="lastname" className={classes.label}>
+              Last Name
             </label>
-            <textarea
+            <input
               className={classes.input}
-              placeholder="Send me a message and I'll reply you as soon as possible"
-              id="message"
-              defaultValue={formValues.message}
+              type="text"
+              placeholder="Enter your last name"
+              name="lastname"
+              id="last_name"
+              defaultValue={formValues.lastname}
               onChange={inputChangeHandler}
             />
-            <p className={classes.error}>{error.message}</p>
+            <p className={classes.error}>{error.lastname}</p>
           </div>
+        </div>
 
-          <div className={classes["checkbox-container"]}>
-            <input type="checkbox" name="" id="checkbox" />
-            <label htmlFor="checkbox">
-              You agree to providing your data to{" "}
-              <a href="https://khayt.netlify.app/" target="blank">
-                Khadijah
-              </a>{" "}
-              who may contact you.
-            </label>
-          </div>
+        <div className={classes.div}>
+          <label htmlFor="email" className={classes.label}>
+            Email
+          </label>
+          <input
+            className={classes.input}
+            type="text"
+            placeholder="Enter your email"
+            id="email"
+            defaultValue={formValues.email}
+            onChange={inputChangeHandler}
+          />
+          <p className={classes.error}>{error.email}</p>
+        </div>
 
-          <button className={classes["submit-btn"]}>Send message</button>
-        </form>
-      </div>
+        <div className={classes.div}>
+          <label htmlFor="message" className={classes.label}>
+            Message
+          </label>
+          <textarea
+            className={classes.input}
+            placeholder="Send me a message and I'll reply you as soon as possible"
+            id="message"
+            defaultValue={formValues.message}
+            onChange={inputChangeHandler}
+          />
+          <p className={classes.error}>{error.message}</p>
+        </div>
+
+        <div className={classes["checkbox-container"]}>
+          <input type="checkbox" name="" id="checkbox" />
+          <label htmlFor="checkbox">
+            You agree to providing your data to{" "}
+            <a href="https://khayt.netlify.app/" target="blank">
+              Khadijah
+            </a>{" "}
+            who may contact you.
+          </label>
+        </div>
+
+        <button className={classes["submit-btn"]} id="btn__submit">
+          Send message
+        </button>
+      </form>
       <Footer />
     </>
   );
